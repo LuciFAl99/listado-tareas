@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font-family-primary: "Poppins", sans-serif;
+    --height-titles: 15px;
+    --height-subtitles: 10px;
+    --color-primary: rgb(132, 52, 172);
+    --color-secondary: rgba(160, 103, 234, 0.356);
+    --white: white;
+}
