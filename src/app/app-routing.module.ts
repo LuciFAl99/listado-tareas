@@ -3,10 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'create-tasks',
+    path: 'home',
     loadChildren: () =>
-      import('./components/create-tasks/create-tasks-routing.module').then(
-        (m) => m.CreateTasksRoutingModule
+      import('./components/Home/home-routing.module').then(
+        (m) => m.HomeRoutingModule
       )
   },
   {

@@ -1,1 +1,117 @@
-<p>lista-tareas works!</p>
+<div class="table-container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col" colspan="4" class="filter-buttons">
+          <button (click)="setFilter('all')" [class.active]="filter === 'all'">Todas</button>
+          <button (click)="setFilter('completed')" [class.active]="filter === 'completed'">Completadas</button>
+          <button (click)="setFilter('pending')" [class.active]="filter === 'pending'">Pendientes</button>
+        </th>
+        <!-- Botón para crear tarea -->
+        <button (click)="openModal()" class="btn btn-primary">Crear Tarea</button>
+      </tr>
+      <tr>
+        <th scope="col">Task ID</th>
+        <th scope="col">Task Title</th>
+        <th scope="col">Assigned Persons and Skills</th>
+        <th scope="col">Mark as Completed</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let task of filteredTasks | paginate: { itemsPerPage: 5, currentPage: currentPage }">
+        <td>{{ task.id }}</td>
+        <td>
+          {{ task.title }}<br>
+          Due date: {{ task.dueDate }}
+        </td>
+        <td>
+          <ul *ngIf="task.assignedPersons.length > 0">
+            <li *ngFor="let person of task.assignedPersons">
+              <strong>{{ person.fullName }}</strong> ({{ person.age }} años)
+              <h5>Skills:</h5>
+              <ul *ngIf="person.skills.length > 0">
+                <li *ngFor="let skill of person.skills">
+                  {{ skill.name }} ({{ skill.level }}) - {{ skill.yearsExperience }} años de experiencia
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <span *ngIf="task.assignedPersons.length === 0">No persons assigned</span>
+        </td>
+        <td>
+          <input type="checkbox" *ngIf="!task.completed" (change)="markAsCompleted(task)" />
+          <span *ngIf="task.completed">Completada</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <pagination-controls (pageChange)="currentPage = $event"></pagination-controls>
+
+  <div class="modal" [ngClass]="{'show': isModalOpen}" [style.display]="isModalOpen ? 'block' : 'none'">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Crear Tarea</h5>
+        <button type="button" class="close" (click)="closeModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="taskTitle">Título de la Tarea</label>
+            <input id="taskTitle" formControlName="title" class="form-control" required>
+            <div *ngIf="taskForm.get('title')?.invalid && taskForm.get('title')?.touched" class="text-danger">
+              El nombre de la tarea es obligatorio.
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="dueDate">Fecha de Vencimiento</label>
+            <input id="dueDate" type="date" formControlName="dueDate" class="form-control" required>
+          </div>
+
+          <div formArrayName="assignedPersons">
+            <div *ngFor="let person of assignedPersonsControls(); let i = index" [formGroupName]="i"
+              class="form-person">
+              <h6>Persona {{ i + 1 }}</h6>
+              <div class="form-group">
+                <label for="personName">Nombre de la Persona</label>
+                <input formControlName="fullName" class="form-control" placeholder="Nombre" required>
+                <div *ngIf="person.get('fullName')?.invalid && person.get('fullName')?.touched" class="text-danger">
+                  El nombre debe tener al menos 5 caracteres.
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="personAge">Edad</label>
+                <input formControlName="age" type="number" class="form-control" placeholder="Edad" required>
+                <div *ngIf="person.get('age')?.invalid && person.get('age')?.touched" class="text-danger">
+                  La edad debe ser mayor a 18 años.
+                </div>
+              </div>
+
+              <div formArrayName="skills">
+                <label for="personSkills">Habilidades</label>
+                <div *ngFor="let skill of skillsControls(i); let j = index" [formGroupName]="j" class="form-skill">
+                  <input formControlName="name" class="form-control" placeholder="Habilidad" required>
+                  <div *ngIf="skill.get('name')?.invalid && skill.get('name')?.touched" class="text-danger">
+                    La habilidad es obligatoria.
+                  </div>
+                  <input formControlName="level" class="form-control" placeholder="Nivel" required>
+                  <input formControlName="yearsExperience" type="number" class="form-control"
+                    placeholder="Años de experiencia" required>
+                  <button (click)="removeSkill(i, j)" type="button" class="btn btn-danger">Eliminar Habilidad</button>
+                </div>
+              </div>
+              <button (click)="addSkill(i)" type="button" class="btn btn-secondary">Agregar Habilidad</button>
+              <button (click)="removePerson(i)" type="button" class="btn btn-danger">Eliminar Persona</button>
+            </div>
+          </div>
+
+          <button type="button" (click)="addPerson()" class="btn btn-secondary">Agregar Persona</button><br>
+          <button type="submit" class="btn btn-primary" [disabled]="isSubmitDisabled">Crear Tarea</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+</div>

@@ -2,10 +2,10 @@ export interface Person {
     userId: number;
     fullName: string;
     age: number;
-    skills: Skills[];
+    skills: Skill[];
   }
   
-  export interface Skills {
+  export interface Skill {
     name: string;
     level: string;
     yearsExperience: number;

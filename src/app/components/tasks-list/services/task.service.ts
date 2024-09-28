@@ -10,8 +10,8 @@ import { Person } from '../interfaces/person';
 })
 export class TaskService {
 
-  private tasksUrl = 'https://jsonplaceholder.typicode.com/todos';
-  private personsUrl = 'assets/persons.json'
+  private tasksUrl = '../../../../assets/mockup/tasks.json';
+  private personsUrl = '../../../../assets/mockup/persons.json'
 
   constructor(private http: HttpClient) { }
 

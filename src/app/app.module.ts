@@ -4,8 +4,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './components/shared/shared.module';
 import { ListaTareasModule } from './components/tasks-list/tasks-list.module';
-import { CrearTareasModule } from './components/create-tasks/create-tasks.module';
 import { HttpClientModule } from '@angular/common/http'
+import { HomeModule } from './components/Home/home.module';
 
 
 @NgModule({
@@ -16,7 +16,7 @@ import { HttpClientModule } from '@angular/common/http'
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    CrearTareasModule,
+    HomeModule,
     ListaTareasModule,
     HttpClientModule
   ],
