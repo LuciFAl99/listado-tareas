@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TasksListRoutingModule } from './tasks-list-routing.module';
+import { TasksListComponent } from './tasks-list.component';
 
-import { ListaTareasRoutingModule } from './lista-tareas-routing.module';
-import { ListaTareasComponent } from './lista-tareas.component';
 
 
 @NgModule({
   declarations: [
-    ListaTareasComponent
+    TasksListComponent
   ],
   imports: [
     CommonModule,
-    ListaTareasRoutingModule
+    TasksListRoutingModule
   ]
 })
 export class ListaTareasModule { }

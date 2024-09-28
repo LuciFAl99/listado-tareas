@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { CrearTareasRoutingModule } from './crear-tareas-routing.module';
-import { CrearTareasComponent } from './crear-tareas.component';
+import { CreateTasksRoutingModule } from './create-tasks-routing.module';
+import { CreateTasksComponent } from './create-tasks.component';
 
 
 @NgModule({
   declarations: [
-    CrearTareasComponent
+    CreateTasksComponent
   ],
   imports: [
     CommonModule,
-    CrearTareasRoutingModule
+    CreateTasksRoutingModule
   ]
 })
 export class CrearTareasModule { }

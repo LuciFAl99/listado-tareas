@@ -3,17 +3,17 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'crear-tareas',
+    path: 'create-tasks',
     loadChildren: () =>
-      import('./components/crear-tareas/crear-tareas-routing.module').then(
-        (m) => m.CrearTareasRoutingModule
+      import('./components/create-tasks/create-tasks-routing.module').then(
+        (m) => m.CreateTasksRoutingModule
       )
   },
   {
-    path: 'lista-tareas',
+    path: 'tasks-list',
     loadChildren: () => 
-      import('./components/lista-tareas/lista-tareas-routing.module').then(
-        (m) => m.ListaTareasRoutingModule
+      import('./components/tasks-list/tasks-list-routing.module').then(
+        (m) => m.TasksListRoutingModule
       )
   }
 ];

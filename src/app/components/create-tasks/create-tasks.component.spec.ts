@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CrearTareasComponent } from './crear-tareas.component';
+import { CrearTareasComponent } from './create-tasks.component';
 
 describe('CrearTareasComponent', () => {
   let component: CrearTareasComponent;
