@@ -1,223 +1,222 @@
 [
-    {
-      "userId": 1,
-      "nombreCompleto": "Juan Pérez",
-      "edad": 29,
-      "habilidades": [
-        {
-          "nombre": "JavaScript",
-          "nivel": "Avanzado",
-          "añosExperiencia": 5
-        },
-        {
-          "nombre": "Angular",
-          "nivel": "Intermedio",
-          "añosExperiencia": 3
-        },
-        {
-          "nombre": "Node.js",
-          "nivel": "Intermedio",
-          "añosExperiencia": 4
-        }
-      ]
-    },
-    {
-      "userId": 2,
-      "nombreCompleto": "María González",
-      "edad": 34,
-      "habilidades": [
-        {
-          "nombre": "Python",
-          "nivel": "Avanzado",
-          "añosExperiencia": 7
-        },
-        {
-          "nombre": "Django",
-          "nivel": "Avanzado",
-          "añosExperiencia": 6
-        },
-        {
-          "nombre": "Machine Learning",
-          "nivel": "Intermedio",
-          "añosExperiencia": 3
-        }
-      ]
-    },
-    {
-      "userId": 3,
-      "nombreCompleto": "Carlos López",
-      "edad": 41,
-      "habilidades": [
-        {
-          "nombre": "Java",
-          "nivel": "Avanzado",
-          "añosExperiencia": 10
-        },
-        {
-          "nombre": "Spring",
-          "nivel": "Avanzado",
-          "añosExperiencia": 8
-        },
-        {
-          "nombre": "Microservicios",
-          "nivel": "Intermedio",
-          "añosExperiencia": 5
-        }
-      ]
-    },
-    {
-      "userId": 4,
-      "nombreCompleto": "Ana Fernández",
-      "edad": 27,
-      "habilidades": [
-        {
-          "nombre": "React",
-          "nivel": "Intermedio",
-          "añosExperiencia": 2
-        },
-        {
-          "nombre": "TypeScript",
-          "nivel": "Intermedio",
-          "añosExperiencia": 2
-        },
-        {
-          "nombre": "CSS",
-          "nivel": "Avanzado",
-          "añosExperiencia": 5
-        }
-      ]
-    },
-    {
-      "userId": 5,
-      "nombreCompleto": "Luis Ramírez",
-      "edad": 36,
-      "habilidades": [
-        {
-          "nombre": "C#",
-          "nivel": "Avanzado",
-          "añosExperiencia": 8
-        },
-        {
-          "nombre": ".NET Core",
-          "nivel": "Intermedio",
-          "añosExperiencia": 5
-        },
-        {
-          "nombre": "SQL Server",
-          "nivel": "Avanzado",
-          "añosExperiencia": 7
-        }
-      ]
-    },
-    {
-      "userId": 6,
-      "nombreCompleto": "Laura Martínez",
-      "edad": 30,
-      "habilidades": [
-        {
-          "nombre": "Vue.js",
-          "nivel": "Intermedio",
-          "añosExperiencia": 3
-        },
-        {
-          "nombre": "JavaScript",
-          "nivel": "Avanzado",
-          "añosExperiencia": 6
-        },
-        {
-          "nombre": "HTML5",
-          "nivel": "Avanzado",
-          "añosExperiencia": 6
-        }
-      ]
-    },
-    {
-      "userId": 7,
-      "nombreCompleto": "Ricardo Soto",
-      "edad": 28,
-      "habilidades": [
-        {
-          "nombre": "PHP",
-          "nivel": "Avanzado",
-          "añosExperiencia": 6
-        },
-        {
-          "nombre": "Laravel",
-          "nivel": "Intermedio",
-          "añosExperiencia": 4
-        },
-        {
-          "nombre": "MySQL",
-          "nivel": "Avanzado",
-          "añosExperiencia": 5
-        }
-      ]
-    },
-    {
-      "userId": 8,
-      "nombreCompleto": "Daniela Torres",
-      "edad": 32,
-      "habilidades": [
-        {
-          "nombre": "Ruby",
-          "nivel": "Avanzado",
-          "añosExperiencia": 7
-        },
-        {
-          "nombre": "Rails",
-          "nivel": "Avanzado",
-          "añosExperiencia": 6
-        },
-        {
-          "nombre": "PostgreSQL",
-          "nivel": "Intermedio",
-          "añosExperiencia": 4
-        }
-      ]
-    },
-    {
-      "userId": 9,
-      "nombreCompleto": "Miguel Ortiz",
-      "edad": 25,
-      "habilidades": [
-        {
-          "nombre": "Flutter",
-          "nivel": "Intermedio",
-          "añosExperiencia": 2
-        },
-        {
-          "nombre": "Dart",
-          "nivel": "Intermedio",
-          "añosExperiencia": 2
-        },
-        {
-          "nombre": "Firebase",
-          "nivel": "Intermedio",
-          "añosExperiencia": 1
-        }
-      ]
-    },
-    {
-      "userId": 10,
-      "nombreCompleto": "Sofía Herrera",
-      "edad": 38,
-      "habilidades": [
-        {
-          "nombre": "AWS",
-          "nivel": "Avanzado",
-          "añosExperiencia": 6
-        },
-        {
-          "nombre": "DevOps",
-          "nivel": "Intermedio",
-          "añosExperiencia": 5
-        },
-        {
-          "nombre": "Docker",
-          "nivel": "Avanzado",
-          "añosExperiencia": 4
-        }
-      ]
-    }
-  ]
-  
+  {
+    "userId": 1,
+    "fullName": "Juan Pérez",
+    "age": 29,
+    "skills": [
+      {
+        "name": "JavaScript",
+        "level": "Advanced",
+        "yearsExperience": 5
+      },
+      {
+        "name": "Angular",
+        "level": "Intermediate",
+        "yearsExperience": 3
+      },
+      {
+        "name": "Node.js",
+        "level": "Intermediate",
+        "yearsExperience": 4
+      }
+    ]
+  },
+  {
+    "userId": 2,
+    "fullName": "María González",
+    "age": 34,
+    "skills": [
+      {
+        "name": "Python",
+        "level": "Advanced",
+        "yearsExperience": 7
+      },
+      {
+        "name": "Django",
+        "level": "Advanced",
+        "yearsExperience": 6
+      },
+      {
+        "name": "Machine Learning",
+        "level": "Intermediate",
+        "yearsExperience": 3
+      }
+    ]
+  },
+  {
+    "userId": 3,
+    "fullName": "Carlos López",
+    "age": 41,
+    "skills": [
+      {
+        "name": "Java",
+        "level": "Advanced",
+        "yearsExperience": 10
+      },
+      {
+        "name": "Spring",
+        "level": "Advanced",
+        "yearsExperience": 8
+      },
+      {
+        "name": "Microservices",
+        "level": "Intermediate",
+        "yearsExperience": 5
+      }
+    ]
+  },
+  {
+    "userId": 4,
+    "fullName": "Ana Fernández",
+    "age": 27,
+    "skills": [
+      {
+        "name": "React",
+        "level": "Intermediate",
+        "yearsExperience": 2
+      },
+      {
+        "name": "TypeScript",
+        "level": "Intermediate",
+        "yearsExperience": 2
+      },
+      {
+        "name": "CSS",
+        "level": "Advanced",
+        "yearsExperience": 5
+      }
+    ]
+  },
+  {
+    "userId": 5,
+    "fullName": "Luis Ramírez",
+    "age": 36,
+    "skills": [
+      {
+        "name": "C#",
+        "level": "Advanced",
+        "yearsExperience": 8
+      },
+      {
+        "name": ".NET Core",
+        "level": "Intermediate",
+        "yearsExperience": 5
+      },
+      {
+        "name": "SQL Server",
+        "level": "Advanced",
+        "yearsExperience": 7
+      }
+    ]
+  },
+  {
+    "userId": 6,
+    "fullName": "Laura Martínez",
+    "age": 30,
+    "skills": [
+      {
+        "name": "Vue.js",
+        "level": "Intermediate",
+        "yearsExperience": 3
+      },
+      {
+        "name": "JavaScript",
+        "level": "Advanced",
+        "yearsExperience": 6
+      },
+      {
+        "name": "HTML5",
+        "level": "Advanced",
+        "yearsExperience": 6
+      }
+    ]
+  },
+  {
+    "userId": 7,
+    "fullName": "Ricardo Soto",
+    "age": 28,
+    "skills": [
+      {
+        "name": "PHP",
+        "level": "Advanced",
+        "yearsExperience": 6
+      },
+      {
+        "name": "Laravel",
+        "level": "Intermediate",
+        "yearsExperience": 4
+      },
+      {
+        "name": "MySQL",
+        "level": "Advanced",
+        "yearsExperience": 5
+      }
+    ]
+  },
+  {
+    "userId": 8,
+    "fullName": "Daniela Torres",
+    "age": 32,
+    "skills": [
+      {
+        "name": "Ruby",
+        "level": "Advanced",
+        "yearsExperience": 7
+      },
+      {
+        "name": "Rails",
+        "level": "Advanced",
+        "yearsExperience": 6
+      },
+      {
+        "name": "PostgreSQL",
+        "level": "Intermediate",
+        "yearsExperience": 4
+      }
+    ]
+  },
+  {
+    "userId": 9,
+    "fullName": "Miguel Ortiz",
+    "age": 25,
+    "skills": [
+      {
+        "name": "Flutter",
+        "level": "Intermediate",
+        "yearsExperience": 2
+      },
+      {
+        "name": "Dart",
+        "level": "Intermediate",
+        "yearsExperience": 2
+      },
+      {
+        "name": "Firebase",
+        "level": "Intermediate",
+        "yearsExperience": 1
+      }
+    ]
+  },
+  {
+    "userId": 10,
+    "fullName": "Sofía Herrera",
+    "age": 38,
+    "skills": [
+      {
+        "name": "AWS",
+        "level": "Advanced",
+        "yearsExperience": 6
+      },
+      {
+        "name": "DevOps",
+        "level": "Intermediate",
+        "yearsExperience": 5
+      },
+      {
+        "name": "Docker",
+        "level": "Advanced",
+        "yearsExperience": 4
+      }
+    ]
+  }
+]

@@ -1,4 +1,4 @@
-export interface Tarea {
+export interface Task {
     userId: number;
     id: number;
     title: string;

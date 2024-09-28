@@ -11,7 +11,8 @@ import { TasksListComponent } from './tasks-list.component';
   ],
   imports: [
     CommonModule,
-    TasksListRoutingModule
+    TasksListRoutingModule,
+    
   ]
 })
 export class ListaTareasModule { }
